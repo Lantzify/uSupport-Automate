@@ -21,7 +21,7 @@
 				<PackageLicenseExpression>MIT</PackageLicenseExpression>
 				<PackageProjectUrl>https://github.com/Lantzify/uSupport-Automate</PackageProjectUrl>
 				<PackageTags>umbraco automate umbraco-marketplace uSupport support</PackageTags>
-				<RepositoryUrl>https://github.com/Lantzify/uSupport</RepositoryUrl>
+				<RepositoryUrl>https://github.com/Lantzify/uSupport-Automate</RepositoryUrl>
 				<Description>Umbraco Automate triggers and actions for uSupport.</Description>
 				<PackageTags>umbraco umbraco-marketplace uSupport automate automation</PackageTags>
 				<EmbedUntrackedSources>true</EmbedUntrackedSources>
