@@ -1,0 +1,46 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+    "AuthorDetails": {
+        "Name": "Lantzify",
+        "Url": "https://ランツ.dev",
+        "ImageUrl": "https://github.com/lantzify.png"
+    },
+    "Category": "Editor Tools",
+    "PackageType": "Package",
+    "LicenseTypes": [
+        "Free"
+    ],
+    "Title": "uSupport.Automate",
+    "Description": "Connects uSupport to Umbraco Automate. Adds triggers for when tickets are created, updated, change status, get resolved, get a comment or are deleted, and actions to create tickets, add comments, change a ticket's status and look up a ticket. Build automations around your support tickets right in the backoffice, without writing code.",
+    "DocumentationUrl": "https://Lantzify.github.io/uSupport-documentation/",
+    "IssueTrackerUrl": "https://github.com/Lantzify/uSupport-automate/issues",
+    "PackagesByAuthor": [
+        "AutoDictionaries",
+        "AutoBlockList",
+        "UmbracoNaviHideIcon",
+        "uSupport.uSync",
+        "EasyEntityFlags"
+    ],
+    "Screenshots": [
+        {
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/triggers.png",
+            "Caption": "uSupport triggers"
+        },
+        {
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/actions.png",
+            "Caption": "uSupport actions"
+        },
+        {
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/automation.png",
+            "Caption": "An automation that replies to new tickets"
+        },
+        {
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/run.png",
+            "Caption": "A run and its step outputs"
+        },
+        {
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/ticket-history.png",
+            "Caption": "The automation's comment in the ticket history"
+        }
+    ]
+}

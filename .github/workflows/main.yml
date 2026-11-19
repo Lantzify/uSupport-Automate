@@ -1,0 +1,33 @@
+name: Release
+on:
+  release:
+    types:
+      - published
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  release_name:
+    name: Publish NuGet Package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build project
+        run: dotnet build --configuration Release src/uSupport.Automate
+
+      - name: Package files
+        run: dotnet pack --configuration Release  src/uSupport.Automate /p:Version=${{github.ref_name}}
+
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{secrets.NUGET_USER}}
+
+      - name: Publish the package
+        run: dotnet nuget push src/uSupport.Automate/build/Release/uSupport.Automate.${{github.ref_name}}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{steps.login.outputs.NUGET_API_KEY}}

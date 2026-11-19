@@ -1,0 +1,4 @@
+<Solution>
+    <Project Path="uSupport.Automate.Site/uSupport.Automate.Site.csproj" />
+    <Project Path="uSupport.Automate/uSupport.Automate.csproj" />
+</Solution>

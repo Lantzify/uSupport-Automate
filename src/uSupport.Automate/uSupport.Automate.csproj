@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+		<PropertyGroup>
+				<TargetFramework>net10.0</TargetFramework>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<Nullable>enable</Nullable>
+				<StaticWebAssetBasePath>App_Plugins/uSupportAutomate</StaticWebAssetBasePath>
+		</PropertyGroup>
+
+		<ItemGroup>
+				<PackageReference Include="Umbraco.Automate.Core" />
+				<PackageReference Include="uSupport" />
+		</ItemGroup>
+
+		<PropertyGroup>
+				<PackageId>uSupport.Automate</PackageId>
+				<Version>17.0.0</Version>
+				<Title>uSupport Automate</Title>
+				<Authors>Lantzify</Authors>
+				<Owners>Lantzify</Owners>
+				<PackageIcon>usupport.png</PackageIcon>
+				<PackageLicenseExpression>MIT</PackageLicenseExpression>
+				<PackageProjectUrl>https://github.com/Lantzify/uSupport-automate</PackageProjectUrl>
+				<PackageTags>umbraco automate umbraco-marketplace uSupport support</PackageTags>
+				<RepositoryUrl>https://github.com/Lantzify/uSupport</RepositoryUrl>
+				<Description>Umbraco Automate triggers and actions for uSupport.</Description>
+				<PackageTags>umbraco umbraco-marketplace uSupport automate automation</PackageTags>
+				<EmbedUntrackedSources>true</EmbedUntrackedSources>
+				<IncludeSymbols>true</IncludeSymbols>
+				<PackageReadmeFile>umbraco-marketplace-readme.md</PackageReadmeFile>
+				<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+				<ContentTargetFolders>content</ContentTargetFolders>
+				<PackageOutputPath>build/Release</PackageOutputPath>
+		</PropertyGroup>
+
+		<ItemGroup>
+				<None Include="..\..\umbraco-marketplace-readme.md" Pack="true" PackagePath="\" />
+				<None Include="..\..\assets\usupport.png" Pack="True" PackagePath="" />
+		</ItemGroup>
+</Project>
