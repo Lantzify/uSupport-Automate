@@ -5,7 +5,7 @@
         "Url": "https://ランツ.dev",
         "ImageUrl": "https://github.com/lantzify.png"
     },
-    "Category": "Editor Tools",
+    "Category": "Developer Tools",
     "PackageType": "Package",
     "LicenseTypes": [
         "Free"
@@ -22,25 +22,5 @@
         "EasyEntityFlags"
     ],
     "Screenshots": [
-        {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/triggers.png",
-            "Caption": "uSupport triggers"
-        },
-        {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/actions.png",
-            "Caption": "uSupport actions"
-        },
-        {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/automation.png",
-            "Caption": "An automation that replies to new tickets"
-        },
-        {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/run.png",
-            "Caption": "A run and its step outputs"
-        },
-        {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/ticket-history.png",
-            "Caption": "The automation's comment in the ticket history"
-        }
     ]
 }
