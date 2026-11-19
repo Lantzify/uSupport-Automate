@@ -15,22 +15,6 @@ Stop doing the same ticket chores by hand. For example:
 * Changes made by automations show up in the ticket history
 * Loop protection, so an automation doesn't keep triggering itself
 
-## Requirements
-* Umbraco 17.6 or later
-* Umbraco Automate 17.6 or later
-* uSupport 17 or later
-
-## Getting started
-1. Install Umbraco Automate and uSupport.Automate. uSupport comes along if you don't have it yet.
-   ```
-   dotnet add package Umbraco.Automate
-   dotnet add package uSupport.Automate
-   ```
-2. Give the workspace's service account access to uSupport. In **Users**, open the user group the service account belongs to and add the **uSupport** section. Every uSupport trigger and action needs it, so without it they won't show up.
-3. Create an automation. The triggers and actions are in the **uSupport** group.
-
-If Automate shows database errors like `no such table: umbracoAutomateWorkspace`, it's missing its connection string. To let it share the Umbraco database, set `Umbraco:Automate:UseNamedConnectionString` to `umbracoDbDSN` in `appsettings.json` and restart.
-
 ## Triggers
 | Trigger | Fires when |
 |---|---|
@@ -51,15 +35,7 @@ Every trigger passes the ticket on to later steps: its ID and ticket number (e.g
 | Change Ticket Status | Moves a ticket to another status, e.g. Resolved. |
 | Get Ticket | Loads a ticket so later steps can use its fields. |
 
-Good to know:
-* The workspace's service account is the author of the tickets and comments an automation creates, so the ticket history shows they came from an automation.
-* Give the ticket type or status by name (e.g. `General question`) or by ID.
-* The actions don't send uSupport's emails. Add Automate's Send Email step if you want one.
-* HTML in summaries and comments is sanitized, the same as in the uSupport section.
-* By default, a trigger skips changes that would loop back into the same automation. You can change this under **Advanced** in the trigger's settings.
-
 ## Useful links
 - [uSupport](https://github.com/Lantzify/uSupport)
+- [uSync](https://github.com/Lantzify/uSupport-uSync)
 - [uSupport documentation](https://lantzify.github.io/uSupport-documentation/)
-- [Umbraco Automate](https://github.com/umbraco/Umbraco.Automate)
-- [Report an issue](https://github.com/Lantzify/uSupport-automate/issues)
