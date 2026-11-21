@@ -23,15 +23,15 @@
     ],
     "Screenshots": [
         {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/overview.PNG",
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-Automate/refs/heads/master/assets/overview.PNG",
             "Caption": "uSupport overview"
         },
         {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/addComment.PNG",
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-Automate/refs/heads/master/assets/addComment.PNG",
             "Caption": "uSupport add comment"
         },
         {
-            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-automate/main/assets/changeStatus.PNG",
+            "ImageUrl": "https://raw.githubusercontent.com/Lantzify/uSupport-Automate/refs/heads/master/assets/changeStatus.PNG",
             "Caption": "uSupport change status"
         }
     ]
