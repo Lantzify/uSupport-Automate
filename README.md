@@ -55,8 +55,6 @@ Every trigger passes the ticket on to later steps: its ID and ticket number (e.g
 If you find any issues with the package, feel free to [raise an issue](https://github.com/Lantzify/uSupport-automate/issues)!
 
 ## Screenshots
-![uSupport triggers](assets/triggers.png "uSupport triggers")
-![uSupport actions](assets/actions.png "uSupport actions")
-![An automation that replies to new tickets](assets/automation.png "An automation that replies to new tickets")
-![A run and its step outputs](assets/run.png "A run and its step outputs")
-![The automation's comment in the ticket history](assets/ticket-history.png "The automation's comment in the ticket history")
+![Overview](assets/overview.PNG "uSupport overview")
+![Add comment](assets/addComment.PNG "uSupport add comment")
+![Change status](assets/changeStatus.PNG "uSupport change status")
